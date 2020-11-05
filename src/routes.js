@@ -12,7 +12,6 @@ const Routes = (props) => {
   const { store } = props;
 
   const getDataNews = (nextState, replace, cb) => {
-    console.log('nextState', nextState);
     const { params: { source } } = nextState;
     store.dispatch(fetchData(source));
     cb();
